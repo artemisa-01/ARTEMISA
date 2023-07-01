@@ -1,0 +1,349 @@
+
+/* LOGO-MENU */
+@font-face {
+    font-family: 'Roman_SD';
+    src: url("../Fuente/Roman_SD.ttf");
+}
+.text-Roman_SD{
+    font-family: 'Roman_SD';
+    font-size: 20px;
+        list-style: none;
+}
+.gh{
+    padding: 0;
+}
+.dropdown-item{
+    color: #3f8c12;
+}
+.nav-link {
+    color: #3f8c12;
+}
+
+.nav-link:hover{
+    color: #9ACD32;
+}
+.dropdown-item:hover{
+    color: #9ACD32; 
+}
+.artemisa{
+    width: 100px;
+    height: 100px;
+}
+
+.img-foco{
+    height: 284px;
+}
+
+.menu-menu{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    
+}
+.casa-menu{
+    margin: 12px;
+
+}   
+
+
+/* Header */
+.fondo{
+    background-color: rgb(192 203 196 / 37%);
+}
+@font-face{
+    font-family: 'GOTHIC';
+    src: url("../Fuente/GOTHIC.TTF");
+}
+
+.Titulo{
+    font-family: 'CAESAR';
+    font-size: 28px;
+    color: #3f8c12;
+}
+.titulo_btn{
+    font-family: 'CAESAR';
+    font-size: 28px;
+}
+.titulo-header{
+    font-family: 'CAESAR';
+    font-size: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* FIN LOGO MENU*/
+
+/* CONTENIDO LOGO, TITULO ARTEMISA, TEXTO */.bg {
+  animation: slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, #6c3 50%, rgb(222, 222, 223) 50%);
+  bottom: 0;
+  left: -50%;
+  opacity: .5;
+  position: fixed;
+  right: -50%;
+  top: 0;
+  z-index: -1;
+}
+
+.bg2 {
+  animation-direction: alternate-reverse;
+  animation-duration: 4s;
+}
+
+.bg3 {
+  animation-duration: 5s;
+}
+
+.content {
+  background-color: rgba(255, 255, 255, .8);
+  border-radius: .25em;
+  box-shadow: 0 0 .25em rgba(92, 41, 41, 0.25);
+  box-sizing: border-box;
+  left: 50%;
+  padding: 10vmin;
+  position: relative;
+  text-align: center;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.typewriter-effect {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.casa{
+    padding-bottom: 10px;
+
+}
+
+h1 {
+  font-family: monospace;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(-25%);
+  }
+  100% {
+    transform: translateX(25%);
+  }
+}
+
+/* FIN DE CONTENIDO LOGO, TITULO ARTEMISA, TEXTO */
+*/
+
+/* Animacion_instrucciones_juego */
+.modal_button{
+    padding: 1rem 1rem;
+    border-radius: 5px;
+    border: 0;
+    font-size: 24px;
+    background-color: #3f8c12;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    transition: all .3s ease;
+}
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #111111bd;
+    pointer-events: none;
+    display: flex;
+    opacity: 0;
+}
+.modal_container{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    position: relative;
+    gap: 1rem;
+    align-items: center;
+    width: 90%;
+    max-width: 600px;
+    max-height: 90%;
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 3rem 2.5rem;
+    margin: auto;
+}
+.modal_container h2{
+    font-size: 2rem;
+}
+.modal_container p{
+    margin-bottom: 10px;
+}
+.modal_container img{
+    width: 90%;
+    max-width: 300px;
+}
+.close_modal{
+    position: absolute;
+    top: 2%;
+    right: 5%;
+    font-size: xx-large;
+    font-weight: bold;
+    cursor: pointer;
+}
+.modal-show{
+    opacity: 1;
+    pointer-events: unset;
+    transition: opacity .6s;
+}
+/* 
+
+
+/* 
+VIDEO */
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+  .white-box {
+    width: 457px;
+    height: 249px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .custom-video {
+    width: 400px;
+  }
+  /* Fin video */
+
+
+
+/* boton_juego */
+.padre-juego-btn {
+
+   display: flex;
+   justify-content: center;
+   justify-content: center;
+   
+  }
+
+  .corner-button {
+    font-family: 'Lato', sans-serif;
+    letter-spacing: .02rem;
+    cursor: pointer;
+    background: transparent;
+    border: 0.5rem solid currentColor;
+    padding: 1.5rem 2rem;
+    font-size: 2.2rem;
+   
+    color:  #3f8c12;
+    position: relative;
+    -webkit-transition: color 0.3s;
+    transition: color 0.3s;
+    background: white;
+  }
+  .corner-button:hover {
+    color: #9ACD32;
+  }
+  .corner-button:hover::before {
+    width: 0;
+  }
+  .corner-button:hover::after {
+    height: 0;
+  }
+  .corner-button:active {
+    border-width: 0.25rem;
+  }
+  .corner-button span {
+    position: relative;
+    z-index: 2;
+    color: black;
+  }
+  .corner-button::before, .corner-button::after {
+    content: '';
+    position: absolute;
+    background:white;
+    z-index: 1;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  .corner-button::before {
+    width: calc(100% - 3rem);
+    height: calc(101% + 1rem);
+    top: -0.5rem;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  .corner-button::after {
+    height: calc(100% - 3rem);
+    width: calc(101% + 1rem);
+    left: -0.5rem;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+
+/* Fin boton juego */
+
+.gaspar{
+  height: 325px;
+  padding-left: 29px;
+
+}
+/* Instrucciones de juego */
+.imagen-guia1{
+  height: 209px;
+  padding: 1rem;
+  width: 74%;
+}
+.imagen-guia2{
+  height: 189px;
+  padding: 1rem;
+  width: 71%;
+}
+.imagen-guia12{
+  height: 122px;
+  padding: 1rem;
+  width: 84%;
+}
+.alto{
+  height: 18rem;
+}
+.tect{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img-father{
+  height: 10rem;
+}
+/* fin instrucciones del juego */
+
+
+/* Foooter */
+.html{
+    width: 100%;
+}
+
+.FACEBOOK{
+    width: 99px;
+}
+.Instagram{
+    width:85px;
+}
+
+.redes{
+    height:60px;
+    width: 60px;
+    margin: 2px;
+}
+/* Fin footer
